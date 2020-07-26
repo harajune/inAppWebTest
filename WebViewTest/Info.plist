@@ -56,5 +56,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Memoro will add photos to memo</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Memoro will add photos from your photo library</string>
 </dict>
 </plist>

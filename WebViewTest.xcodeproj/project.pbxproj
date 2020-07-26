@@ -15,6 +15,9 @@
 		985E016A24C46022007BB3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985E016824C46022007BB3E7 /* LaunchScreen.storyboard */; };
 		985E017524C46022007BB3E7 /* WebViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985E017424C46022007BB3E7 /* WebViewTestTests.swift */; };
 		985E018024C46022007BB3E7 /* WebViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985E017F24C46022007BB3E7 /* WebViewTestUITests.swift */; };
+		985E018E24C463D4007BB3E7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985E018D24C463D4007BB3E7 /* WebViewController.swift */; };
+		98D6B19724CD5A1C0033C6E6 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 98D6B19624CD5A1C0033C6E6 /* dist */; };
+		98D6B19B24CD635F0033C6E6 /* quill_practice.html in Resources */ = {isa = PBXBuildFile; fileRef = 98D6B19A24CD635F0033C6E6 /* quill_practice.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		985E017B24C46022007BB3E7 /* WebViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		985E017F24C46022007BB3E7 /* WebViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTestUITests.swift; sourceTree = "<group>"; };
 		985E018124C46022007BB3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		985E018D24C463D4007BB3E7 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		98D6B19624CD5A1C0033C6E6 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
+		98D6B19A24CD635F0033C6E6 /* quill_practice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = quill_practice.html; path = "../../../quilljs-practice/quill_practice.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		985E015124C46021007BB3E7 = {
 			isa = PBXGroup;
 			children = (
+				985E018F24C46753007BB3E7 /* assets */,
 				985E015C24C46021007BB3E7 /* WebViewTest */,
 				985E017324C46022007BB3E7 /* WebViewTestTests */,
 				985E017E24C46022007BB3E7 /* WebViewTestUITests */,
@@ -99,6 +106,7 @@
 		985E015C24C46021007BB3E7 /* WebViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				985E018D24C463D4007BB3E7 /* WebViewController.swift */,
 				985E015D24C46021007BB3E7 /* AppDelegate.swift */,
 				985E015F24C46021007BB3E7 /* SceneDelegate.swift */,
 				985E016124C46021007BB3E7 /* ContentView.swift */,
@@ -134,6 +142,15 @@
 				985E018124C46022007BB3E7 /* Info.plist */,
 			);
 			path = WebViewTestUITests;
+			sourceTree = "<group>";
+		};
+		985E018F24C46753007BB3E7 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				98D6B19A24CD635F0033C6E6 /* quill_practice.html */,
+				98D6B19624CD5A1C0033C6E6 /* dist */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +257,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D6B19724CD5A1C0033C6E6 /* dist in Resources */,
+				98D6B19B24CD635F0033C6E6 /* quill_practice.html in Resources */,
 				985E016A24C46022007BB3E7 /* LaunchScreen.storyboard in Resources */,
 				985E016724C46022007BB3E7 /* Preview Assets.xcassets in Resources */,
 				985E016424C46022007BB3E7 /* Assets.xcassets in Resources */,
@@ -270,6 +289,7 @@
 				985E015E24C46021007BB3E7 /* AppDelegate.swift in Sources */,
 				985E016024C46021007BB3E7 /* SceneDelegate.swift in Sources */,
 				985E016224C46021007BB3E7 /* ContentView.swift in Sources */,
+				985E018E24C463D4007BB3E7 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
