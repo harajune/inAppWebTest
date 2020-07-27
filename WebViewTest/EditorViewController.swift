@@ -32,11 +32,32 @@ class EditorViewController: UIViewController, WKNavigationDelegate {
         view.backgroundColor = .white
         
         webView.navigationDelegate = self
+        webView.addInputAccessoryView(toolbar: getToolBar(height: 44))
         saveButton.addTarget(self, action: #selector(self.saveAction(_:)), for: .touchUpInside)
 
         view.addSubview(webView)
         view.addSubview(saveButton)
 
+    }
+    
+    func getToolBar(height: Int) -> UIToolbar? {
+        let toolBar = UIToolbar()
+        toolBar.frame = CGRect(x: 0, y: 50, width: 320, height: height)
+        toolBar.barStyle = .black
+        toolBar.tintColor = .white
+        toolBar.barTintColor = UIColor.blue
+
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(onToolbarDoneClick(sender:)) )
+        let flexibleSpaceItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil )
+
+        toolBar.setItems([flexibleSpaceItem, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+
+        toolBar.sizeToFit()
+        return toolBar
+    }
+    @objc func onToolbarDoneClick(sender: UIBarButtonItem) {
+        webView.resignFirstResponder()
     }
     
     @objc func saveAction(_ sender: UIButton!) {
