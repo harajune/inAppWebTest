@@ -12,7 +12,7 @@ import UIKit
 import WebKit
 import PinLayout
 
-class EditorViewController: UIViewController, WKUIDelegate {
+class EditorViewController: UIViewController, WKNavigationDelegate {
     private let webView: WKWebView = {
         let webConfiguration = WKWebViewConfiguration()
         let view = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -31,7 +31,7 @@ class EditorViewController: UIViewController, WKUIDelegate {
 
         view.backgroundColor = .white
         
-        webView.uiDelegate = self
+        webView.navigationDelegate = self
         saveButton.addTarget(self, action: #selector(self.saveAction(_:)), for: .touchUpInside)
 
         view.addSubview(webView)
@@ -40,7 +40,12 @@ class EditorViewController: UIViewController, WKUIDelegate {
     }
     
     @objc func saveAction(_ sender: UIButton!) {
-        NSLog("pressed")
+        let script = "JSON.stringify(window.memoro.editor.getContents());"
+        webView.evaluateJavaScript(script) { (object, error) -> Void in
+            if let jsonString = object as? NSMutableString {
+                NSLog(jsonString as String)
+            }
+        }
     }
     
     override func viewDidLoad() {

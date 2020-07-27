@@ -16,8 +16,8 @@
 		985E017524C46022007BB3E7 /* WebViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985E017424C46022007BB3E7 /* WebViewTestTests.swift */; };
 		985E018024C46022007BB3E7 /* WebViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985E017F24C46022007BB3E7 /* WebViewTestUITests.swift */; };
 		985E018E24C463D4007BB3E7 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985E018D24C463D4007BB3E7 /* EditorViewController.swift */; };
-		98D6B19724CD5A1C0033C6E6 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 98D6B19624CD5A1C0033C6E6 /* dist */; };
-		98D6B19B24CD635F0033C6E6 /* quill_practice.html in Resources */ = {isa = PBXBuildFile; fileRef = 98D6B19A24CD635F0033C6E6 /* quill_practice.html */; };
+		98D6B1A224CEA13E0033C6E6 /* quill_practice.html in Resources */ = {isa = PBXBuildFile; fileRef = 98D6B1A024CEA13E0033C6E6 /* quill_practice.html */; };
+		98D6B1A324CEA13E0033C6E6 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 98D6B1A124CEA13E0033C6E6 /* dist */; };
 		A8C73E1A29CC28DC6C17903C /* Pods_WebViewTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426D0BD76D77A8179425D0E9 /* Pods_WebViewTestTests.framework */; };
 		A8E7CC2523E30C86AE82C65A /* Pods_WebViewTest_WebViewTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61E9A7B78EBF1C0B647226C /* Pods_WebViewTest_WebViewTestUITests.framework */; };
 		EB2630864BDD1751AD63DF5A /* Pods_WebViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D93F54C9C0F28D62F0EC36 /* Pods_WebViewTest.framework */; };
@@ -62,8 +62,8 @@
 		985E017F24C46022007BB3E7 /* WebViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTestUITests.swift; sourceTree = "<group>"; };
 		985E018124C46022007BB3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		985E018D24C463D4007BB3E7 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
-		98D6B19624CD5A1C0033C6E6 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
-		98D6B19A24CD635F0033C6E6 /* quill_practice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = quill_practice.html; path = "../../../quilljs-practice/quill_practice.html"; sourceTree = "<group>"; };
+		98D6B1A024CEA13E0033C6E6 /* quill_practice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = quill_practice.html; path = "../../../quilljs-practice/quill_practice.html"; sourceTree = "<group>"; };
+		98D6B1A124CEA13E0033C6E6 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
 		E3A53C566BA5C117152EF8C9 /* Pods-WebViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewTest.release.xcconfig"; path = "Target Support Files/Pods-WebViewTest/Pods-WebViewTest.release.xcconfig"; sourceTree = "<group>"; };
 		E61E9A7B78EBF1C0B647226C /* Pods_WebViewTest_WebViewTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewTest_WebViewTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D93F54C9C0F28D62F0EC36 /* Pods_WebViewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebViewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,8 +177,8 @@
 		985E018F24C46753007BB3E7 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				98D6B19A24CD635F0033C6E6 /* quill_practice.html */,
-				98D6B19624CD5A1C0033C6E6 /* dist */,
+				98D6B1A124CEA13E0033C6E6 /* dist */,
+				98D6B1A024CEA13E0033C6E6 /* quill_practice.html */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -302,11 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D6B19724CD5A1C0033C6E6 /* dist in Resources */,
-				98D6B19B24CD635F0033C6E6 /* quill_practice.html in Resources */,
 				985E016A24C46022007BB3E7 /* LaunchScreen.storyboard in Resources */,
 				985E016724C46022007BB3E7 /* Preview Assets.xcassets in Resources */,
+				98D6B1A324CEA13E0033C6E6 /* dist in Resources */,
 				985E016424C46022007BB3E7 /* Assets.xcassets in Resources */,
+				98D6B1A224CEA13E0033C6E6 /* quill_practice.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
